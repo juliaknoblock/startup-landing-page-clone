@@ -439,10 +439,10 @@ min-width: 37.5rem;
 
 /* Navigation Section */
 .top-navigation { background-color: #fff;
-position: fixed;
-width: 100%; 
+position: fixed; /*keeps nav bar at top while you scroll*/
+width: 100%; /*keeps nav bar at top while you scroll*/
 border-bottom: 1px solid #dddddd;
-z-index: 9999;
+z-index: 9999;/*also keeps nag bar at top while you scroll*/
 
 
 }
@@ -528,6 +528,10 @@ color: black;
 .icons li {display: inline-block;
 margin: 1.5rem;}
 
+/* footer stuff */
+.social li {display: inline-block;
+margin: 1.5rem;
+}
 
 
 
