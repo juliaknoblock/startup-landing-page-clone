@@ -1,4 +1,4 @@
-html { box-sizing: border-box;}
+html, body, div, nav, section { box-sizing: border-box;}
  *, *:before, *:after {box-sizing: inherit;}
 
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
@@ -10,7 +10,7 @@ html { box-sizing: border-box;}
  */
 
 html {
-  font-family: sans-serif; /* 1 */
+  font-family: 'roboto' sans-serif; /* 1 */
   -ms-text-size-adjust: 100%; /* 2 */
   -webkit-text-size-adjust: 100%; /* 2 */
 }
@@ -429,31 +429,86 @@ th {
   padding: 0;
 }
 
+body { /* background-color: lightgray; */ }
+.content {padding: 0 0.938rem;
+margin: 0 auto;
+min-width: 37.5rem; 
+}
+
+:focus {outline: none; }
+
 /* Navigation Section */
 .top-navigation { background-color: #fff;
+position: fixed;
+width: 100%; 
+border-bottom: 1px solid #dddddd;
+z-index: 9999;
+
+
 }
-.top-navigation > .content { width: 970px;
-height: 70px;
-margin: 0 auto; 
-font-family: 'Roboto', sans-serif;
-font-size: 16px;
+
+.top-navigation > .content { height: 4.375rem; 
+}
+
+.top-navigation .links { float: right;
+font-family: 'Roboto;' sans-serif;
 color: #838994;
-letter-spacing: 0.03em;
+font-size: 1.04rem;
+margin-top: 1.75rem;
+
 }
-.top-navigation .links > active {color: #4c5058;
+
+.top-navigation .logo { height: 4.375em; }
+
+.top-navigation .links li { display: inline-block; 
+margin-left: 1.563rem; 
+
+}
+.top-navigation .links li.active { color: #4c5058;
 font-weight: 500; 
 }
-
-.top-navigation .links ls { display: inline-block; 
-margin-left: 25px; }
-
-.top-navigation .links .active {float: right;
-font-family: 'Roboto' sans-serif;
-color: #838994;
-font-size: 16px;
-margin-top: 25px;
--webkit-font-smoothing: antialiased; }
 
 .top-navigation .links li:hover {cursor: pointer;
 color: #333333;
 }
+
+/* introduction section */
+
+.introduction { background-image: url('../images/firstbackground.jpg');
+background-position: center bottom;
+background-repeat: no-repeat;
+background-size: cover;
+height: 500px; 
+overflow: auto;}
+
+.introduction h1, h3 {color: white;
+text-align: center;
+font-weight: 200;
+}
+
+.introduction h1 {margin-top: 13rem;
+font-size: 3.125rem;}
+
+.introduction h3 {margin-top: 1.25rem;
+font-size: 1.563rem;}
+
+/* button */
+.big-button {text-shadow: none;
+  border-style: none;
+  border-radius: 4px;
+  padding: 16px 26px;
+  line-height: 1.33;
+  display: block; /* this and margin setting makes it centered */
+  margin: 0 auto;
+  background-color: orange;
+  color: white;
+}
+
+button:hover {cursor: pointer;
+background-color: red;}
+
+
+
+
+
+
